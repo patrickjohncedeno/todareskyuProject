@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(222, 222, 222, 1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #navbarNav {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 100%; /* Adjust based on the height of your header */
+    transform: translateX(-250px);
+    transition: transform 0.3s ease;
+    z-index: 0;
+  }
+  
+  #navbarNav.show {
+    transform: translateX(0);
+  }
+  
+  .submenu {
+    display: none;
+    margin-left: 20px;
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-item > .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Adjust layout when sidebar is visible */
+  .container {
+    transition: margin-left 0.3s ease;
+  }
+  
+  .container.shifted {
+    margin-left: 250px; /* Width of the sidebar */
+  }
+  
+  @media (max-width: 768px) {
+    #navbarNav {
+      width: 200px; /* Adjust as needed for smaller screens */
+    }
+    
+    .container.shifted {
+      margin-left: 200px;
+    }
+  }
+  
+  
+  
+  
+  
+  /* Follow me for more pens like this! */
+  
+  /* Tweak to change the look and feel */
+  :root {
+    --dropdown-highlight: rgb(93,93,93);
+    --dropdown-width: 80px;
+    --dropdown-background: white;
+    --dropdown-color: black;
+  }
+  
+  /* Boring button styles */
+  a.button {
+    /* Frame */
+    display: inline-block;
+    border-radius: 50px;
+    box-sizing: border-box;
+  
+    /* Style */
+    border: none;
+    background: var(--button-background);
+    color: var(--button-color);
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  a.button:active {
+    filter: brightness(75%);
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    padding: 0;
+    margin-right: 1em;
+  
+    border: none;
+  }
+  
+  .dropdown summary {
+    list-style: none;
+    list-style-type: none;
+  }
+  
+  .dropdown > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Remove outline and border for the button */
+  .dropdown summary:focus {
+    outline: none;
+  }
+  
+  .dropdown summary:focus a.button {
+    border: none; /* Ensure no border on focus */
+  }
+  
+  /* Dropdown styles continue */
+  .dropdown ul {
+    position: absolute;
+    margin: 25px 0 0 0;
+    padding: 10px 0;
+    width: var(--dropdown-width);
+    left: 50%;
+    margin-left: calc((var(--dropdown-width) / 2) * -1);
+    box-sizing: border-box;
+    z-index: 2;
+  
+    background: var(--dropdown-background);
+    border-radius: 6px;
+    list-style: none;
+  }
+  
+  .dropdown ul li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown ul li a:link,
+  .dropdown ul li a:visited {
+    display: inline-block;
+    padding: 10px 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+  
+    color: var(--dropdown-color);
+    text-decoration: none;
+  }
+  
+  .dropdown ul li a:hover {
+    background-color: var(--dropdown-highlight);
+    color: var(--dropdown-background);
+  }
+  
+  /* Dropdown triangle */
+  .dropdown ul::before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--dropdown-background) transparent;
+  }
+  
+  /* Close the dropdown with outside clicks */
+  .dropdown > summary::before {
+    display: none;
+  }
+  
+  .dropdown[open] > summary::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .pointer-cursor{
+      cursor: pointer;
+  }
+  .custom-margin{
+      margin-top: 70px;
+  }
+
+
+  .nav-link {
+    font-weight: normal;
+    transition: font-weight 0.3s, color 0.3s;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    font-weight: bold;
+    color: black;
+  }
+
+  .submenu {
+    display: none; /* Hide submenus by default */
+}
+
+.show {
+    display: block !important;
+}
+

@@ -1,0 +1,178 @@
+body{
+    font: url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+}    
+    /* Background color for active li */
+    .nav-item.active {
+        background-image: linear-gradient(195deg, #ef5350, #e53935); /* Light pink with some transparency */
+      }
+
+
+      /* Sidebar Hover Effects */
+.nav-item > a {
+    transition: background-color 0.3s;
+}
+.nav-item:hover > a {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter background */
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.6em;
+    background-color: #dc3545; /* Use a darker shade if needed */
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+
+
+      
+
+      /* Ensure hover effect is not applied to active items */
+      .nav-item.active:hover {
+        background-image: linear-gradient(195deg, #ef5350, #e53935); /* Keep the active background */
+      }
+  
+/*   
+          .dashboard-card {
+              transition: all 0.3s ease;
+              cursor: pointer;
+          }
+  
+          .dashboard-card:hover {
+              transform: scale(1.05);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+              background-color: blue;
+          }
+   */
+
+
+          /* button effects */
+
+
+          /* Hover effect for the message button */
+.message-btn {
+    transition: transform 0.3s ease;
+}
+
+.message-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
+/* Tab styles */
+.nav {
+    position: relative;
+}
+
+.nav-link {
+    color: black; /* Default text color for inactive tabs */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Active tab styles */
+.nav-item.show .nav-link,
+.nav-link.active {
+    background-color: transparent !important; /* Remove background color */
+    border-color: transparent; /* Remove border color */
+    color: transparent !important; /* Make the text transparent */
+    background: linear-gradient(to right, #ff0000, #ff7f7f); /* Apply red gradient to background */
+    -webkit-background-clip: text; /* Use background-clip to show gradient in text */
+    background-clip: text; /* Use background-clip to show gradient in text */
+}
+
+/* Maintain the color for inactive tabs */
+.nav-link:not(.active) {
+    color: black; /* Set inactive text color */
+}
+
+.nav-link img {
+    position: relative; /* Set position for the image */
+    z-index: 1; /* Ensure the image is above the gradient */
+}
+
+.nav-link.active {
+    position: relative; /* Position the link for overlay */
+}
+
+.nav-link.active img {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(100%) saturate(4731%) hue-rotate(358deg) brightness(97%) contrast(101%); /* Adjust image color for active state */
+}
+
+/* Create the red gradient line for the active tab */
+.nav-link.active:after {
+    content: '';
+    position: absolute;
+    height: 4px; /* Height of the gradient line */
+    background: linear-gradient(195deg, #ff7f7f, #ff0000); /* Reversed red gradient */
+    bottom: -4px; /* Position below the tab */
+    left: 0;
+    right: 0; /* Span the entire width of the active tab */
+}
+
+
+/* Base button style */
+.back-button {
+    transition: all 0.3s ease;
+}
+
+
+/* SVG hover effect */
+.back-button svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.back-button:hover svg {
+    transform: scale(1.1); /* Scale SVG up on hover */
+    fill: #000000; /* Change SVG color on hover */
+}
+
+/* close button */
+.close-button {
+    transition: all 0.3s ease;
+}
+
+
+/* SVG hover effect */
+.close-button svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.close-button:hover svg {
+    transform: scale(1.1); /* Scale SVG up on hover */
+    fill: rgb(222, 37, 37); /* Change SVG color on hover */
+}
+
+
+.section-1 .card {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.section-1 .card:hover {
+    background-color: #f8f9fa; /* Light background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+
+
+   /* Show icons on row hover */
+   tr:hover .action-icons {
+    visibility: visible;
+}
+
+/* Initially hide the icons */
+.action-icons {
+    visibility: hidden;
+}
+
+
+.add-new-admin-hovered {
+    color: #d2cfcf;
+}
+
+.add-new-admin-hovered:hover {
+    color: #ffffff;
+}

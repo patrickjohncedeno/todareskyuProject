@@ -1,0 +1,62 @@
+.bg-gradient-dark{
+    background-image: linear-gradient(195deg, #42424a, #191919);
+}
+
+
+.bg-light-gray{
+    background-color: #f0f2f5;
+}
+
+.dark-horizontal{   
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Button styles */
+/* Base style for the blue button */
+.btn.bg-gradient-blue {
+    position: relative;
+    background: linear-gradient(195deg, #7fafff, #0047c0) !important;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensure pseudo-element stays inside the button */
+}
+
+/* Hover overlay effect */
+.btn.bg-gradient-blue::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Start with no overlay */
+    transition: background-color 0.3s ease;
+}
+
+.btn.bg-gradient-blue:hover::after {
+    background-color: rgba(255, 255, 255, 0.2); /* Apply translucent white overlay */
+}
+
+/* Base style for the red button */
+.btn.bg-gradient-red {
+    position: relative;
+    background: linear-gradient(195deg, #ff7f7f, #c00000) !important;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensure pseudo-element stays inside the button */
+}
+
+/* Hover overlay effect */
+.btn.bg-gradient-red::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Start with no overlay */
+    transition: background-color 0.3s ease;
+}
+
+.btn.bg-gradient-red:hover::after {
+    background-color: rgba(255, 255, 255, 0.2); /* Apply translucent white overlay */
+}
+
