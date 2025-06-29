@@ -1,0 +1,19 @@
+userName: patrickjohnceden_0LSCGE
+accessKey: zpsGZ7yLCmTySgR2Ljsn
+app: bs://6fe447bfe41fd430eb3405b74cbf4f9085ca0199
+platforms:
+  - platformName: android
+    deviceName: Samsung Galaxy S22
+    platformVersion: 12.0
+  - platformName: android
+    deviceName: Google Pixel 9
+    platformVersion: 15.0
+  - platformName: android
+    deviceName: Huawei P30
+    platformVersion: 9.0
+browserstackLocal: true
+buildName: bstack-demo
+projectName: BrowserStack Sample
+buildIdentifier: ${BUILD_NUMBER}
+debug: true
+networkLogs: true
